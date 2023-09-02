@@ -3525,6 +3525,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zthun/lumberjacky-log@workspace:packages/lumberjacky-log"
   dependencies:
+    lodash: ^4.17.21
     microbundle: ^0.15.1
     typescript: ^5.2.2
     vitest: ^0.34.3
