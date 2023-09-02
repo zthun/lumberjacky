@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "packages",
+    "target": "esnext",
+    "paths": {
+      "@zthun/lumberjacky-console": ["lumberjacky-console/src/index"],
+      "@zthun/lumberjacky-log": ["lumberjacky-log/src/index"],
+      "@zthun/lumberjacky-nest": ["lumberjacky-nest/src/index"],
+      "@zthun/lumberjacky-api": ["lumberjacky-api/src/index"]
+    }
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["**/node_modules/**"]
+}
