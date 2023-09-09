@@ -1,6 +1,7 @@
-import { Logger } from '@nestjs/common';
+import { Injectable, Logger } from '@nestjs/common';
 import { IZLogEntry, IZLogger, ZLogLevel } from '@zthun/lumberjacky-log';
 
+@Injectable()
 export class ZLoggerNest implements IZLogger {
   private _logger = new Logger();
 
