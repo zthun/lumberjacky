@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/zthun/lumberjacky/compare/v1.2.0...v1.2.1) (2023-09-09)
+
+
+### Bug Fixes
+
+* export the context logger ([bd78151](https://github.com/zthun/lumberjacky/commit/bd781510e1ffae79efce2499bf0e6de7f47bef46))
+
+
+
 ## [1.2.0](https://github.com/zthun/lumberjacky/compare/v1.1.0...v1.2.0) (2023-09-09)
 
 
