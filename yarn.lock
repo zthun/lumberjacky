@@ -3779,7 +3779,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zthun/lumberjacky-log@^1.2.0, @zthun/lumberjacky-log@workspace:packages/lumberjacky-log":
+"@zthun/lumberjacky-log@^1.2.1, @zthun/lumberjacky-log@workspace:packages/lumberjacky-log":
   version: 0.0.0-use.local
   resolution: "@zthun/lumberjacky-log@workspace:packages/lumberjacky-log"
   dependencies:
@@ -3799,7 +3799,7 @@ __metadata:
     "@nestjs/core": ^10.2.4
     "@nestjs/platform-express": ^10.2.4
     "@nestjs/testing": ^10.2.4
-    "@zthun/lumberjacky-log": ^1.2.0
+    "@zthun/lumberjacky-log": ^1.2.1
     lodash: ^4.17.21
     microbundle: ^0.15.1
     reflect-metadata: ^0.1.13
