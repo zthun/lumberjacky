@@ -52,7 +52,7 @@ export interface IZLogEntry {
    * This will usually be a friendly name of a function
    * or class where this log took place.
    */
-  context: string;
+  context?: string;
 
   /**
    * The log level.
@@ -81,11 +81,24 @@ export class ZLogEntryBuilder {
    */
   public constructor() {
     this._entry = {
-      context: '',
       level: ZLogLevel.ERROR,
       message: '',
       created: new Date().toJSON()
     };
+  }
+
+  /**
+   * Sets the log level.
+   *
+   * @param level -
+   *        The log level.
+   *
+   * @returns
+   *        This object.
+   */
+  public level(level: ZLogLevel) {
+    this._entry.level = level;
+    return this;
   }
 
   /**
@@ -94,10 +107,7 @@ export class ZLogEntryBuilder {
    * @returns
    *        This object.
    */
-  public catastrophe(): this {
-    this._entry.level = ZLogLevel.CATASTROPHE;
-    return this;
-  }
+  public catastrophe = this.level.bind(this, ZLogLevel.CATASTROPHE);
 
   /**
    * Sets the log level to error.
@@ -105,10 +115,7 @@ export class ZLogEntryBuilder {
    * @returns
    *        This object.
    */
-  public error(): this {
-    this._entry.level = ZLogLevel.ERROR;
-    return this;
-  }
+  public error = this.level.bind(this, ZLogLevel.ERROR);
 
   /**
    * Sets the log level to warning.
@@ -116,10 +123,7 @@ export class ZLogEntryBuilder {
    * @returns
    *        This object.
    */
-  public warning(): this {
-    this._entry.level = ZLogLevel.WARNING;
-    return this;
-  }
+  public warning = this.level.bind(this, ZLogLevel.WARNING);
 
   /**
    * Sets the log level to info.
@@ -127,10 +131,7 @@ export class ZLogEntryBuilder {
    * @returns
    *        This object.
    */
-  public info(): this {
-    this._entry.level = ZLogLevel.INFO;
-    return this;
-  }
+  public info = this.level.bind(this, ZLogLevel.INFO);
 
   /**
    * Sets the context of the entry.
@@ -141,7 +142,7 @@ export class ZLogEntryBuilder {
    * @returns
    *        This object.
    */
-  public context(ctx: string): this {
+  public context(ctx: string | undefined): this {
     this._entry.context = ctx;
     return this;
   }
@@ -157,6 +158,20 @@ export class ZLogEntryBuilder {
    */
   public message(msg: string): this {
     this._entry.message = msg;
+    return this;
+  }
+
+  /**
+   * Copies the other entry into the current entry.
+   *
+   * @param other -
+   *        The entry to copy.
+   *
+   * @returns
+   *        This object.
+   */
+  public copy(other: IZLogEntry): this {
+    this._entry = structuredClone(other);
     return this;
   }
 
