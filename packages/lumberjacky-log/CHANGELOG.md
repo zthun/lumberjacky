@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.0](https://github.com/zthun/lumberjacky/compare/v1.1.0...v1.2.0) (2023-09-09)
+
+
+### Features
+
+* context in the log entry is now optional ([aa24906](https://github.com/zthun/lumberjacky/commit/aa249067d81775f632645f6a1673d1101cf885f3))
+* context logger enables support for a default context when one is not provided ([36840c7](https://github.com/zthun/lumberjacky/commit/36840c7ed7feb33a09209136a41dabede7ff2e84))
+
+
+
 ## 1.1.0 (2023-09-02)
 
 
