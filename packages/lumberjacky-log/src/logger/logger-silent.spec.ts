@@ -1,5 +1,5 @@
-import { ZLogEntryBuilder } from 'src/log-entry/log-entry';
 import { describe, expect, it } from 'vitest';
+import { ZLogEntryBuilder } from '../log-entry/log-entry';
 import { ZLoggerSilent } from './logger-silent';
 
 describe('LoggerSilent', () => {
