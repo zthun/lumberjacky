@@ -4,7 +4,7 @@ import { IZLogEntry } from '../log-entry/log-entry';
  * Represents a service that manages log entries.
  *
  * Logging is a fire and forget operation.  If it fails,
- * you move on.  Logging should never stop the operation of the
+ * you move on.  Logging should never stop the operation of an
  * app.
  */
 export interface IZLogger {

@@ -20,7 +20,7 @@ export enum ZLogLevel {
   ERROR = 1,
 
   /**
-   * Nothing is really totally wrong.
+   * Nothing is really wrong.
    *
    * Should probably not be ignored and
    * action should be taken, but it's not
