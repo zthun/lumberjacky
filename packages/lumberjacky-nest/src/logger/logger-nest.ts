@@ -1,6 +1,30 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { IZLogEntry, IZLogger, ZLogLevel } from '@zthun/lumberjacky-log';
 
+/**
+ * Represents the logger for nestjs.
+ *
+ * You will import this through the {@link ZLoggerModule} object.
+ *
+ * You can use this in conjunction with the {@link @zthun/lumberjacky-log#ZLoggerContext} object.
+ *
+ *
+ * @example
+ *
+ * ```ts
+ * import { Injectable, Inject } from '@nestjs/common';
+ * import { LoggerToken } from '@zthun/lumberjacky-nest';
+ *
+ * @Injectable
+ * public class MyService {
+ *     private _logger: IZLogger;
+ *
+ *     public constructor(@Inject(LoggerToken) logger: IZLogger) {
+ *         this._logger = new ZLoggerContext('MyService', logger);
+ *     }
+ * }
+ * ```
+ */
 @Injectable()
 export class ZLoggerNest implements IZLogger {
   private _logger = new Logger();
