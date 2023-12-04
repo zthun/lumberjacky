@@ -11,6 +11,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "keywords": [
+    "logging"
+  ],
   "scripts": {
     "clean": "rimraf --glob 'dist' 'reports' 'coverage' '*.tgz' '*.log' 'packages/**/dist' 'packages/**/docs' 'packages/**/*.tgz' 'packages/**/*.log'",
     "test": "vitest --run --coverage",
