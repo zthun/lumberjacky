@@ -40,5 +40,5 @@
   "resolutions": {
     "vite": "^4.4.9"
   },
-  "packageManager": "yarn@3.3.1"
+  "packageManager": "yarn@4.0.2"
 }
