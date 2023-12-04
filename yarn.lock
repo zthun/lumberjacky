@@ -3817,7 +3817,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@zthun/lumberjacky-log@npm:^1.2.1, @zthun/lumberjacky-log@workspace:packages/lumberjacky-log":
+"@zthun/lumberjacky-log@npm:^1.3.0, @zthun/lumberjacky-log@workspace:packages/lumberjacky-log":
   version: 0.0.0-use.local
   resolution: "@zthun/lumberjacky-log@workspace:packages/lumberjacky-log"
   dependencies:
@@ -3829,7 +3829,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@zthun/lumberjacky-nest@npm:^1.2.1, @zthun/lumberjacky-nest@workspace:packages/lumberjacky-nest":
+"@zthun/lumberjacky-nest@npm:^1.3.0, @zthun/lumberjacky-nest@workspace:packages/lumberjacky-nest":
   version: 0.0.0-use.local
   resolution: "@zthun/lumberjacky-nest@workspace:packages/lumberjacky-nest"
   dependencies:
@@ -3837,7 +3837,7 @@ __metadata:
     "@nestjs/core": "npm:^10.2.10"
     "@nestjs/platform-express": "npm:^10.2.10"
     "@nestjs/testing": "npm:^10.2.10"
-    "@zthun/lumberjacky-log": "npm:^1.2.1"
+    "@zthun/lumberjacky-log": "npm:^1.3.0"
     lodash: "npm:^4.17.21"
     microbundle: "npm:^0.15.1"
     reflect-metadata: "npm:^0.1.13"
@@ -3855,8 +3855,8 @@ __metadata:
   resolution: "@zthun/lumberjacky-web@workspace:packages/lumberjacky-web"
   dependencies:
     "@nestjs/common": "npm:^10.2.10"
-    "@zthun/lumberjacky-log": "npm:^1.2.1"
-    "@zthun/lumberjacky-nest": "npm:^1.2.1"
+    "@zthun/lumberjacky-log": "npm:^1.3.0"
+    "@zthun/lumberjacky-nest": "npm:^1.3.0"
     reflect-metadata: "npm:^0.1.13"
     rxjs: "npm:^7.8.1"
     typedoc: "npm:^0.25.4"
