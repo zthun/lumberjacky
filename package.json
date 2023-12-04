@@ -20,22 +20,22 @@
     "postinstall": "husky install"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.17",
-    "@commitlint/cli": "^17.7.1",
-    "@commitlint/config-conventional": "^17.7.0",
+    "@babel/core": "^7.23.5",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "@types/lodash": "^4.14.198",
     "@types/node": "^20.6.0",
     "@vitest/coverage-istanbul": "^0.34.4",
-    "@zthun/lint-janitor": "^14.3.2",
-    "@zthun/lint-janitor-config": "^14.3.2",
+    "@zthun/lint-janitor": "^15.1.1",
+    "@zthun/lint-janitor-config": "^15.1.1",
     "husky": "^8.0.3",
-    "jsdom": "^22.1.0",
-    "lerna": "^7.2.0",
-    "rimraf": "^5.0.1",
-    "typescript": "^5.2.2",
-    "vite": "^4.4.9",
+    "jsdom": "^23.0.1",
+    "lerna": "^7.4.2",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.2",
+    "vite": "^5.0.5",
     "vite-tsconfig-paths": "^4.2.1",
-    "vitest": "^0.34.4"
+    "vitest": "^0.34.6"
   },
   "resolutions": {
     "vite": "^4.4.9"
