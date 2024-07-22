@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/zthun/lumberjacky/compare/v1.3.0...v2.0.0) (2024-07-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* lumberjacky-log is now a library of esm modules
+
+### Features
+
+* lumberjacky-log is now a library of esm modules ([773f22c](https://github.com/zthun/lumberjacky/commit/773f22ce818048b2e4735a03db56a0bf5eb56b73))
+
+
+
 ## [1.3.0](https://github.com/zthun/lumberjacky/compare/v1.2.1...v1.3.0) (2023-12-04)
 
 **Note:** Version bump only for package @zthun/lumberjacky-log

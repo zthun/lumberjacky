@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/zthun/lumberjacky/compare/v1.3.0...v2.0.0) (2024-07-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* lumberjacky-web has been renamed to lumberjacky-docs
+* lumberjacky-nest is now a library of esm modules
+* lumberjacky-log is now a library of esm modules
+* convert lumberjacky packages to esm modules
+
+### Features
+
+* convert lumberjacky packages to esm modules ([ba56677](https://github.com/zthun/lumberjacky/commit/ba566778561c6b52933c199e8c4ec72867f46c18))
+* lumberjacky-log is now a library of esm modules ([773f22c](https://github.com/zthun/lumberjacky/commit/773f22ce818048b2e4735a03db56a0bf5eb56b73))
+* lumberjacky-nest is now a library of esm modules ([475e2a2](https://github.com/zthun/lumberjacky/commit/475e2a274f7e9119761b583135b832be0e165e9f))
+* lumberjacky-web has been renamed to lumberjacky-docs ([13c9805](https://github.com/zthun/lumberjacky/commit/13c9805173d3d9c3ca88f53c34bea6598c2932c8))
+
+
+
 ## [1.3.0](https://github.com/zthun/lumberjacky/compare/v1.2.1...v1.3.0) (2023-12-04)
 
 
