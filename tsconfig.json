@@ -8,5 +8,5 @@
       "@zthun/lumberjacky-nest": ["lumberjacky-nest/src/index"]
     }
   },
-  "include": ["**/*.ts"]
+  "include": ["**/*.ts", "**/*.mts"]
 }
