@@ -1,5 +1,5 @@
-import { IZLogEntry, ZLogLevel } from '../log-entry/log-entry';
-import { IZLogger } from './logger';
+import { IZLogEntry, ZLogLevel } from '../log-entry/log-entry.mjs';
+import { IZLogger } from './logger.mjs';
 
 /**
  * Represents a logger that logs to the console.

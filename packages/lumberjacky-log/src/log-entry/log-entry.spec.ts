@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { ZLogEntryBuilder, ZLogLevel } from './log-entry';
+import { ZLogEntryBuilder, ZLogLevel } from './log-entry.mjs';
 
 describe('ZLogEntryBuilder', () => {
   function createTestTarget() {

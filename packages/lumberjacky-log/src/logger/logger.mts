@@ -1,4 +1,4 @@
-import { IZLogEntry } from '../log-entry/log-entry';
+import { IZLogEntry } from '../log-entry/log-entry.mjs';
 
 /**
  * Represents a service that manages log entries.

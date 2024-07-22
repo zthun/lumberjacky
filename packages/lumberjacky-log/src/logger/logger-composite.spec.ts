@@ -1,13 +1,13 @@
 import { Mocked, beforeEach, describe, expect, it } from 'vitest';
 import { mock } from 'vitest-mock-extended';
-import { ZLogEntryBuilder } from '../log-entry/log-entry';
-import { IZLogger } from './logger';
-import { ZLoggerComposite } from './logger-composite';
+import { ZLogEntryBuilder } from '../log-entry/log-entry.mjs';
+import { ZLoggerComposite } from './logger-composite.mjs';
+import { IZLogger } from './logger.mjs';
 
 describe('ZLoggerComposite', () => {
-  let loggerA: Mocked<IZLogger>;
-  let loggerB: Mocked<IZLogger>;
-  let loggerC: Mocked<IZLogger>;
+  let loggerA: Mocked;
+  let loggerB: Mocked;
+  let loggerC: Mocked;
 
   function createTestTarget() {
     return new ZLoggerComposite([loggerA, loggerB, loggerC]);

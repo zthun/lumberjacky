@@ -1,5 +1,5 @@
-import { IZLogEntry, ZLogEntryBuilder } from '../log-entry/log-entry';
-import { IZLogger } from './logger';
+import { IZLogEntry, ZLogEntryBuilder } from '../log-entry/log-entry.mjs';
+import { IZLogger } from './logger.mjs';
 
 /**
  * A logger that sets up a default context in the case that one is not given in the entry.

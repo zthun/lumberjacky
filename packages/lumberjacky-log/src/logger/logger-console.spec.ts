@@ -1,7 +1,7 @@
 import { noop } from 'lodash';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { ZLogEntryBuilder } from '../log-entry/log-entry';
-import { ZLoggerConsole } from './logger-console';
+import { ZLogEntryBuilder } from '../log-entry/log-entry.mjs';
+import { ZLoggerConsole } from './logger-console.mjs';
 
 describe('ZLoggerConsole', () => {
   let msg: string;
