@@ -7,5 +7,5 @@
       "@zthun/lumberjacky-log": ["../lumberjacky-log/src/index"]
     }
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts", "src/**/*.mts"]
 }

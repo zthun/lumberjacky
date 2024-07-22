@@ -3,12 +3,12 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { IZLogger, ZLogEntryBuilder, ZLogLevel } from '@zthun/lumberjacky-log';
 import { Mocked, afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { mock } from 'vitest-mock-extended';
-import { ZLoggerModule, ZLoggerToken } from './logger-module';
+import { ZLoggerModule, ZLoggerToken } from './logger-module.mjs';
 
 describe('ZLoggerNest', () => {
   describe('ZVaultModule', () => {
-    let _target: INestApplication<any>;
-    let logger: Mocked<Logger>;
+    let _target: INestApplication;
+    let logger: Mocked;
 
     const createTestTarget = async () => {
       const moduleFixture: TestingModule = await Test.createTestingModule({ imports: [ZLoggerModule] })

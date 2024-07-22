@@ -9,11 +9,17 @@
     "url": "https://github.com/zthun/lumberjacky",
     "directory": "packages/lumberjacky-nest"
   },
-  "main": "./dist/lib/index.js",
-  "module": "./dist/lib/index.esm.js",
-  "types": "./dist/types/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs",
+    "types": "./dist/index.d.ts"
+  },
   "scripts": {
-    "build": "microbundle --format esm,cjs --tsconfig tsconfig.prod.json"
+    "build": "vite build"
   },
   "publishConfig": {
     "access": "public"
@@ -29,8 +35,8 @@
     "@nestjs/core": "^10.3.10",
     "@nestjs/platform-express": "^10.3.10",
     "@nestjs/testing": "^10.3.10",
-    "microbundle": "^0.15.1",
     "typescript": "^5.5.3",
+    "vite": "^5.3.4",
     "vitest": "^2.0.4",
     "vitest-mock-extended": "^1.3.2"
   },

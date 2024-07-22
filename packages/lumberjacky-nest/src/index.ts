@@ -1,2 +1,2 @@
-export * from './logger/logger-module';
-export * from './logger/logger-nest';
+export * from './logger/logger-module.mjs';
+export * from './logger/logger-nest.mjs';

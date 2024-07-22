@@ -1,5 +1,5 @@
 import { Module, Provider } from '@nestjs/common';
-import { ZLoggerNest } from './logger-nest';
+import { ZLoggerNest } from './logger-nest.mjs';
 
 /**
  * The symbol to use with {@link @nestjs/common#Inject} to add a lumberjacky logger to your service.
