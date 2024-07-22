@@ -2843,6 +2843,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@zthun/lumberjacky-docs@workspace:packages/lumberjacky-docs":
+  version: 0.0.0-use.local
+  resolution: "@zthun/lumberjacky-docs@workspace:packages/lumberjacky-docs"
+  dependencies:
+    "@nestjs/common": "npm:^10.3.10"
+    "@zthun/lumberjacky-log": "npm:^1.3.0"
+    "@zthun/lumberjacky-nest": "npm:^1.3.0"
+    reflect-metadata: "npm:^0.2.2"
+    rxjs: "npm:^7.8.1"
+    typedoc: "npm:^0.26.5"
+    typedoc-plugin-extras: "npm:^3.1.0"
+    typescript: "npm:^5.5.3"
+  languageName: unknown
+  linkType: soft
+
 "@zthun/lumberjacky-log@npm:^1.3.0, @zthun/lumberjacky-log@workspace:packages/lumberjacky-log":
   version: 0.0.0-use.local
   resolution: "@zthun/lumberjacky-log@workspace:packages/lumberjacky-log"
@@ -2873,21 +2888,6 @@ __metadata:
     vitest-mock-extended: "npm:^1.3.2"
   peerDependencies:
     "@nestjs/common": ^10.3.10
-  languageName: unknown
-  linkType: soft
-
-"@zthun/lumberjacky-web@workspace:packages/lumberjacky-web":
-  version: 0.0.0-use.local
-  resolution: "@zthun/lumberjacky-web@workspace:packages/lumberjacky-web"
-  dependencies:
-    "@nestjs/common": "npm:^10.3.10"
-    "@zthun/lumberjacky-log": "npm:^1.3.0"
-    "@zthun/lumberjacky-nest": "npm:^1.3.0"
-    reflect-metadata: "npm:^0.2.2"
-    rxjs: "npm:^7.8.1"
-    typedoc: "npm:^0.26.5"
-    typedoc-plugin-extras: "npm:^3.1.0"
-    typescript: "npm:^5.5.3"
   languageName: unknown
   linkType: soft
 

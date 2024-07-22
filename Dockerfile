@@ -28,8 +28,8 @@ RUN --mount=type=secret,id=GIT_CREDENTIALS,dst=/root/.git-credentials npx lerna 
     git push --tags
 RUN --mount=type=secret,id=NPM_CREDENTIALS,dst=/root/.npmrc npx lerna publish from-package --yes
 
-FROM node:lts-alpine as lumberjacky-web-install
-RUN npm install -g @zthun/lumberjacky-web
+FROM node:lts-alpine as lumberjacky-docs-install
+RUN npm install -g @zthun/lumberjacky-docs
 
-FROM nginx:stable-alpine as lumberjacky-web
-COPY --from=lumberjacky-web-install /usr/local/lib/node_modules/@zthun/lumberjacky-web/dist/. /usr/share/nginx/html/
+FROM nginx:stable-alpine as lumberjacky-docs
+COPY --from=lumberjacky-docs-install /usr/local/lib/node_modules/@zthun/lumberjacky-docs/dist/. /usr/share/nginx/html/
