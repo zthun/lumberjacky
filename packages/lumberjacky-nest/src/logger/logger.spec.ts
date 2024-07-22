@@ -8,7 +8,7 @@ import { ZLoggerModule, ZLoggerToken } from './logger-module.mjs';
 describe('ZLoggerNest', () => {
   describe('ZVaultModule', () => {
     let _target: INestApplication;
-    let logger: Mocked;
+    let logger: Mocked<Logger>;
 
     const createTestTarget = async () => {
       const moduleFixture: TestingModule = await Test.createTestingModule({ imports: [ZLoggerModule] })

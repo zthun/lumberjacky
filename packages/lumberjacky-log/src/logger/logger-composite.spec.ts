@@ -5,9 +5,9 @@ import { ZLoggerComposite } from './logger-composite.mjs';
 import { IZLogger } from './logger.mjs';
 
 describe('ZLoggerComposite', () => {
-  let loggerA: Mocked;
-  let loggerB: Mocked;
-  let loggerC: Mocked;
+  let loggerA: Mocked<IZLogger>;
+  let loggerB: Mocked<IZLogger>;
+  let loggerC: Mocked<IZLogger>;
 
   function createTestTarget() {
     return new ZLoggerComposite([loggerA, loggerB, loggerC]);
