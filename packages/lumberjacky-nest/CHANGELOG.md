@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/zthun/lumberjacky/compare/v2.0.0...v2.1.0) (2024-07-23)
+
+
+### Bug Fixes
+
+* switch from lodash to lodash-es ([f47c629](https://github.com/zthun/lumberjacky/commit/f47c6298d1afe5d434993e04d87dccc57fdb282a))
+
+
+
 ## [2.0.0](https://github.com/zthun/lumberjacky/compare/v1.3.0...v2.0.0) (2024-07-22)
 
 
