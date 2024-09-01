@@ -2373,10 +2373,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/types@npm:^8.19.0":
-  version: 8.19.0
-  resolution: "@sentry/types@npm:8.19.0"
-  checksum: 10/8812f7394c6c031197abc04d80e5b5b3693742dc065b877c535a9ceb538aabd60ee27fc2b13824e2b8fc264819868109bbd4de3642fd1c7bf30d304fb0c21aa9
+"@sentry/types@npm:^8.27.0":
+  version: 8.27.0
+  resolution: "@sentry/types@npm:8.27.0"
+  checksum: 10/a12775e69c48af7c5b98059b5324ee69980b6b4ac411bc392e4f12c335f8be99188a198f61481bc4589f84d469a76c7776d0f8dc90cd0a5cf39793961a9bc687
   languageName: node
   linkType: hard
 
@@ -3044,7 +3044,7 @@ __metadata:
     vitest: "npm:^2.0.5"
     vitest-mock-extended: "npm:^2.0.2"
   peerDependencies:
-    "@nestjs/common": ^10.3.10
+    "@nestjs/common": ^10.4.0
   languageName: unknown
   linkType: soft
 
@@ -3052,7 +3052,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@zthun/lumberjacky-sentry@workspace:packages/lumberjacky-sentry"
   dependencies:
-    "@sentry/types": "npm:^8.19.0"
+    "@sentry/types": "npm:^8.27.0"
     "@zthun/lumberjacky-log": "npm:^2.1.0"
     lodash: "npm:^4.17.21"
     typescript: "npm:^5.5.4"
