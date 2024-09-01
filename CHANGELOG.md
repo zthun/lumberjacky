@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.0](https://github.com/zthun/lumberjacky/compare/v2.1.0...v2.2.0) (2024-09-01)
+
+
+### Features
+
+* upgrade sentry to 8.27 ([42cb680](https://github.com/zthun/lumberjacky/commit/42cb680a6377c8ff675f66dae53a4f6b5210d73d))
+
+
+
 ## [2.1.0](https://github.com/zthun/lumberjacky/compare/v2.0.0...v2.1.0) (2024-07-23)
 
 
