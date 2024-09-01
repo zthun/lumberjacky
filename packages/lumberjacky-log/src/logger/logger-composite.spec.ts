@@ -1,10 +1,10 @@
-import { Mocked, beforeEach, describe, expect, it } from 'vitest';
-import { mock } from 'vitest-mock-extended';
-import { ZLogEntryBuilder } from '../log-entry/log-entry.mjs';
-import { ZLoggerComposite } from './logger-composite.mjs';
-import { IZLogger } from './logger.mjs';
+import { Mocked, beforeEach, describe, expect, it } from "vitest";
+import { mock } from "vitest-mock-extended";
+import { ZLogEntryBuilder } from "../log-entry/log-entry.mjs";
+import { ZLoggerComposite } from "./logger-composite.mjs";
+import { IZLogger } from "./logger.mjs";
 
-describe('ZLoggerComposite', () => {
+describe("ZLoggerComposite", () => {
   let loggerA: Mocked<IZLogger>;
   let loggerB: Mocked<IZLogger>;
   let loggerC: Mocked<IZLogger>;
@@ -19,10 +19,10 @@ describe('ZLoggerComposite', () => {
     loggerC = mock<IZLogger>();
   });
 
-  it('should log to every child logger.', () => {
+  it("should log to every child logger.", () => {
     // Arrange
     const target = createTestTarget();
-    const expected = new ZLogEntryBuilder().message('log-it').warning().build();
+    const expected = new ZLogEntryBuilder().message("log-it").warning().build();
     // Act
     target.log(expected);
     // Asset

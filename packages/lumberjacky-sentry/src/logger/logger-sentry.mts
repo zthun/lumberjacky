@@ -1,16 +1,17 @@
-import { Client, SeverityLevel } from '@sentry/types';
-import { IZLogEntry, IZLogger, ZLogLevel } from '@zthun/lumberjacky-log';
+import { Client, SeverityLevel } from "@sentry/types";
+import { IZLogEntry, IZLogger, ZLogLevel } from "@zthun/lumberjacky-log";
 
 /**
  * A logger that logs to sentry (https://sentry.io)
  */
 export class ZLoggerSentry implements IZLogger {
-  private static readonly SeverityMap: Record<ZLogLevel, SeverityLevel> = Object.freeze({
-    [ZLogLevel.CATASTROPHE]: 'fatal',
-    [ZLogLevel.ERROR]: 'error',
-    [ZLogLevel.WARNING]: 'warning',
-    [ZLogLevel.INFO]: 'info'
-  });
+  private static readonly SeverityMap: Record<ZLogLevel, SeverityLevel> =
+    Object.freeze({
+      [ZLogLevel.CATASTROPHE]: "fatal",
+      [ZLogLevel.ERROR]: "error",
+      [ZLogLevel.WARNING]: "warning",
+      [ZLogLevel.INFO]: "info",
+    });
 
   /**
    * Initializes a new instance of this object.
@@ -25,8 +26,8 @@ export class ZLoggerSentry implements IZLogger {
       message: entry.message,
       level: ZLoggerSentry.SeverityMap[entry.level],
       extra: {
-        context: entry.context
-      }
+        context: entry.context,
+      },
     });
   }
 }

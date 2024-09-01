@@ -39,7 +39,7 @@ export enum ZLogLevel {
    * It is normally best to avoid this log level
    * unless it's really important to display.
    */
-  INFO = 3
+  INFO = 3,
 }
 
 /**
@@ -82,8 +82,8 @@ export class ZLogEntryBuilder {
   public constructor() {
     this._entry = {
       level: ZLogLevel.ERROR,
-      message: '',
-      created: new Date().toJSON()
+      message: "",
+      created: new Date().toJSON(),
     };
   }
 

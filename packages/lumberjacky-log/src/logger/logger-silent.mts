@@ -1,6 +1,6 @@
-import { noop } from 'lodash-es';
-import { IZLogEntry } from '../log-entry/log-entry.mjs';
-import { IZLogger } from './logger.mjs';
+import { noop } from "lodash-es";
+import { IZLogEntry } from "../log-entry/log-entry.mjs";
+import { IZLogger } from "./logger.mjs";
 
 /**
  * A silent logger.  This logger does nothing.

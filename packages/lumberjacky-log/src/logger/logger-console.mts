@@ -1,11 +1,11 @@
-import { IZLogEntry, ZLogLevel } from '../log-entry/log-entry.mjs';
-import { IZLogger } from './logger.mjs';
+import { IZLogEntry, ZLogLevel } from "../log-entry/log-entry.mjs";
+import { IZLogger } from "./logger.mjs";
 
 /**
  * Represents a logger that logs to the console.
  */
 export class ZLoggerConsole implements IZLogger {
-  public static readonly FATAL = '!!FATAL!!';
+  public static readonly FATAL = "!!FATAL!!";
   private _logFnMap: any;
 
   /**
@@ -18,7 +18,7 @@ export class ZLoggerConsole implements IZLogger {
     this._logFnMap = {
       [ZLogLevel.CATASTROPHE]: (msg: string) => _console.error(msg),
       [ZLogLevel.ERROR]: (msg: string) => _console.error(msg),
-      [ZLogLevel.WARNING]: (msg: string) => _console.warn(msg)
+      [ZLogLevel.WARNING]: (msg: string) => _console.warn(msg),
     };
   }
 
@@ -29,11 +29,14 @@ export class ZLoggerConsole implements IZLogger {
    *        The entry to log.
    */
   public log(entry: IZLogEntry): void {
-    const fn = this._logFnMap[entry.level] || ((msg: string) => this._console.log(msg));
+    const fn =
+      this._logFnMap[entry.level] || ((msg: string) => this._console.log(msg));
 
     const timestamp = `[${entry.created.toLocaleString()}]`;
     const payload =
-      entry.level === ZLogLevel.CATASTROPHE ? `: ${ZLoggerConsole.FATAL} - ${entry.message}` : `: ${entry.message}`;
+      entry.level === ZLogLevel.CATASTROPHE
+        ? `: ${ZLoggerConsole.FATAL} - ${entry.message}`
+        : `: ${entry.message}`;
     fn(`${timestamp}${payload}`);
   }
 }

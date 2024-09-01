@@ -1,6 +1,7 @@
 # Lumberjacky Nest
 
-This is the lumberjacky package that integrates into [NestJS](https://nestjs.com/).
+This is the lumberjacky package that integrates into
+[NestJS](https://nestjs.com/).
 
 ## Usage
 

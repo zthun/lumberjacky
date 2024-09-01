@@ -1,36 +1,42 @@
-import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { ZLogEntryBuilder } from '../log-entry/log-entry.mjs';
-import { ZLoggerContext } from './logger-context.mjs';
-import { ZLoggerSilent } from './logger-silent.mjs';
-import { IZLogger } from './logger.mjs';
+import { beforeEach, describe, expect, it, vi } from "vitest";
+import { ZLogEntryBuilder } from "../log-entry/log-entry.mjs";
+import { ZLoggerContext } from "./logger-context.mjs";
+import { ZLoggerSilent } from "./logger-silent.mjs";
+import { IZLogger } from "./logger.mjs";
 
-describe('ZLoggerContext', () => {
+describe("ZLoggerContext", () => {
   let context: string;
   let forward: IZLogger;
 
   const createTestTarget = () => new ZLoggerContext(context, forward);
 
   beforeEach(() => {
-    context = 'Lumberjacky Log';
+    context = "Lumberjacky Log";
     forward = new ZLoggerSilent();
-    vi.spyOn(forward, 'log');
+    vi.spyOn(forward, "log");
   });
 
-  it('should forward the entry with a new context if context is falsy', () => {
+  it("should forward the entry with a new context if context is falsy", () => {
     // Arrange.
     const target = createTestTarget();
-    const entry = new ZLogEntryBuilder().message('Log message').build();
-    const expected = new ZLogEntryBuilder().copy(entry).context(context).build();
+    const entry = new ZLogEntryBuilder().message("Log message").build();
+    const expected = new ZLogEntryBuilder()
+      .copy(entry)
+      .context(context)
+      .build();
     // Act.
     target.log(entry);
     // Assert.
     expect(forward.log).toHaveBeenCalledWith(expected);
   });
 
-  it('should forward the entry with the provided context if it has one', () => {
+  it("should forward the entry with the provided context if it has one", () => {
     // Arrange.
     const target = createTestTarget();
-    const entry = new ZLogEntryBuilder().message('Log message').context('Custom context').build();
+    const entry = new ZLogEntryBuilder()
+      .message("Log message")
+      .context("Custom context")
+      .build();
     // Act.
     target.log(entry);
     // Assert.

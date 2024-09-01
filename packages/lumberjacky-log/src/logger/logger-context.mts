@@ -1,5 +1,5 @@
-import { IZLogEntry, ZLogEntryBuilder } from '../log-entry/log-entry.mjs';
-import { IZLogger } from './logger.mjs';
+import { IZLogEntry, ZLogEntryBuilder } from "../log-entry/log-entry.mjs";
+import { IZLogger } from "./logger.mjs";
 
 /**
  * A logger that sets up a default context in the case that one is not given in the entry.
@@ -15,7 +15,7 @@ export class ZLoggerContext implements IZLogger {
    */
   public constructor(
     private _context: string,
-    private _forward: IZLogger
+    private _forward: IZLogger,
   ) {}
 
   public log(entry: IZLogEntry): void {

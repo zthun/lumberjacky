@@ -1,10 +1,10 @@
-import { Client, SeverityLevel } from '@sentry/types';
-import { ZLogEntryBuilder, ZLogLevel } from '@zthun/lumberjacky-log';
-import { beforeEach, describe, expect, it, Mocked } from 'vitest';
-import { mock } from 'vitest-mock-extended';
-import { ZLoggerSentry } from './logger-sentry.mjs';
+import { Client, SeverityLevel } from "@sentry/types";
+import { ZLogEntryBuilder, ZLogLevel } from "@zthun/lumberjacky-log";
+import { beforeEach, describe, expect, it, Mocked } from "vitest";
+import { mock } from "vitest-mock-extended";
+import { ZLoggerSentry } from "./logger-sentry.mjs";
 
-describe('ZLoggerSentry', () => {
+describe("ZLoggerSentry", () => {
   let client: Mocked<Client>;
 
   beforeEach(() => {
@@ -13,46 +13,56 @@ describe('ZLoggerSentry', () => {
 
   const createTestTarget = () => new ZLoggerSentry(client);
 
-  describe('Severity', () => {
-    const shouldSendLogSeverity = (expected: SeverityLevel, level: ZLogLevel) => {
+  describe("Severity", () => {
+    const shouldSendLogSeverity = (
+      expected: SeverityLevel,
+      level: ZLogLevel,
+    ) => {
       // Arrange.
-      const entry = new ZLogEntryBuilder().level(level).message('An event happened').build();
+      const entry = new ZLogEntryBuilder()
+        .level(level)
+        .message("An event happened")
+        .build();
       const target = createTestTarget();
 
       // Act.
       target.log(entry);
 
       // Assert.
-      expect(client.captureEvent).toHaveBeenCalledWith(expect.objectContaining({ level: expected }));
+      expect(client.captureEvent).toHaveBeenCalledWith(
+        expect.objectContaining({ level: expected }),
+      );
     };
 
-    it('should send a fatal log entry for a catastrophe', () => {
-      shouldSendLogSeverity('fatal', ZLogLevel.CATASTROPHE);
+    it("should send a fatal log entry for a catastrophe", () => {
+      shouldSendLogSeverity("fatal", ZLogLevel.CATASTROPHE);
     });
 
-    it('should send an error log entry for a error', () => {
-      shouldSendLogSeverity('error', ZLogLevel.ERROR);
+    it("should send an error log entry for a error", () => {
+      shouldSendLogSeverity("error", ZLogLevel.ERROR);
     });
 
-    it('should send a warning log entry for a warning', () => {
-      shouldSendLogSeverity('warning', ZLogLevel.WARNING);
+    it("should send a warning log entry for a warning", () => {
+      shouldSendLogSeverity("warning", ZLogLevel.WARNING);
     });
 
-    it('should send a log entry for a info', () => {
-      shouldSendLogSeverity('info', ZLogLevel.INFO);
+    it("should send a log entry for a info", () => {
+      shouldSendLogSeverity("info", ZLogLevel.INFO);
     });
   });
 
-  it('should send the correct message', () => {
+  it("should send the correct message", () => {
     // Arrange.
-    const expected = 'An event happened';
-    const entry = new ZLogEntryBuilder().message('An event happened').build();
+    const expected = "An event happened";
+    const entry = new ZLogEntryBuilder().message("An event happened").build();
     const target = createTestTarget();
 
     // Act.
     target.log(entry);
 
     // Assert.
-    expect(client.captureEvent).toHaveBeenCalledWith(expect.objectContaining({ message: expected }));
+    expect(client.captureEvent).toHaveBeenCalledWith(
+      expect.objectContaining({ message: expected }),
+    );
   });
 });
