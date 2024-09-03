@@ -10,6 +10,7 @@ const generated = [
 const partialGenerated = ["cspell.json", "lerna.json"];
 
 const esFiles = [
+  "*.cjs",
   "*.ts",
   "packages/**/src/**/*.ts",
   "packages/**/src/**/*.mts",
