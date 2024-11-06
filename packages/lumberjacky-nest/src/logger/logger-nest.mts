@@ -6,7 +6,7 @@ import { IZLogEntry, IZLogger, ZLogLevel } from "@zthun/lumberjacky-log";
  *
  * You will import this through the {@link ZLoggerModule} object.
  *
- * You can use this in conjunction with the {@link @zthun/lumberjacky-log#ZLoggerContext} object.
+ * You can use this in conjunction with the {@link @zthun/lumberjacky-log!ZLoggerContext} object.
  *
  *
  * @example
