@@ -1,4 +1,4 @@
-import { Client, SeverityLevel } from "@sentry/types";
+import { Client, SeverityLevel } from "@sentry/core";
 import { IZLogEntry, IZLogger, ZLogLevel } from "@zthun/lumberjacky-log";
 
 /**

@@ -17,14 +17,14 @@
     "access": "public"
   },
   "devDependencies": {
-    "@nestjs/common": "^10.4.7",
+    "@nestjs/common": "^10.4.15",
     "@zthun/lumberjacky-log": "^2.2.1",
     "@zthun/lumberjacky-nest": "^2.2.1",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
     "typedoc": "^0.26.11",
     "typedoc-plugin-extras": "^3.1.0",
-    "typescript": "^5.6.3"
+    "typescript": "~5.6.3"
   },
   "files": [
     "dist"
