@@ -3008,8 +3008,8 @@ __metadata:
   resolution: "@zthun/lumberjacky-docs@workspace:packages/lumberjacky-docs"
   dependencies:
     "@nestjs/common": "npm:^10.4.15"
-    "@zthun/lumberjacky-log": "npm:^2.2.2"
-    "@zthun/lumberjacky-nest": "npm:^2.2.2"
+    "@zthun/lumberjacky-log": "npm:^2.2.3"
+    "@zthun/lumberjacky-nest": "npm:^2.2.3"
     reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
     typedoc: "npm:^0.27.6"
@@ -3017,7 +3017,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@zthun/lumberjacky-log@npm:^2.2.2, @zthun/lumberjacky-log@workspace:packages/lumberjacky-log":
+"@zthun/lumberjacky-log@npm:^2.2.3, @zthun/lumberjacky-log@workspace:packages/lumberjacky-log":
   version: 0.0.0-use.local
   resolution: "@zthun/lumberjacky-log@workspace:packages/lumberjacky-log"
   dependencies:
@@ -3029,7 +3029,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@zthun/lumberjacky-nest@npm:^2.2.2, @zthun/lumberjacky-nest@workspace:packages/lumberjacky-nest":
+"@zthun/lumberjacky-nest@npm:^2.2.3, @zthun/lumberjacky-nest@workspace:packages/lumberjacky-nest":
   version: 0.0.0-use.local
   resolution: "@zthun/lumberjacky-nest@workspace:packages/lumberjacky-nest"
   dependencies:
@@ -3037,7 +3037,7 @@ __metadata:
     "@nestjs/core": "npm:^10.4.15"
     "@nestjs/platform-express": "npm:^10.4.15"
     "@nestjs/testing": "npm:^10.4.15"
-    "@zthun/lumberjacky-log": "npm:^2.2.2"
+    "@zthun/lumberjacky-log": "npm:^2.2.3"
     lodash-es: "npm:^4.17.21"
     reflect-metadata: "npm:^0.2.2"
     rxjs: "npm:^7.8.1"
@@ -3055,7 +3055,7 @@ __metadata:
   resolution: "@zthun/lumberjacky-sentry@workspace:packages/lumberjacky-sentry"
   dependencies:
     "@sentry/core": "npm:^8.47.0"
-    "@zthun/lumberjacky-log": "npm:^2.2.2"
+    "@zthun/lumberjacky-log": "npm:^2.2.3"
     lodash: "npm:^4.17.21"
     typescript: "npm:~5.7.2"
     vite: "npm:^5.4.11"
