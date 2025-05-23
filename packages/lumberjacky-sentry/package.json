@@ -31,7 +31,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@sentry/core": "^8.47.0",
+    "@sentry/core": "^8.55.0",
     "@zthun/lumberjacky-log": "^2.2.3",
     "lodash": "^4.17.21"
   },
