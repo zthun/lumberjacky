@@ -21,9 +21,9 @@
     "@zthun/lumberjacky-log": "^2.2.3",
     "@zthun/lumberjacky-nest": "^2.2.3",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.1",
-    "typedoc": "^0.27.6",
-    "typescript": "~5.7.2"
+    "rxjs": "^7.8.2",
+    "typedoc": "^0.28.4",
+    "typescript": "~5.8.3"
   },
   "files": [
     "dist"
