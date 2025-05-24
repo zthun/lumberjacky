@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.0](https://github.com/zthun/lumberjacky/compare/v2.2.3...v2.3.0) (2025-05-24)
+
+**Note:** Version bump only for package @zthun/lumberjacky-log
+
+
+
+
+
 ## [2.2.3](https://github.com/zthun/lumberjacky/compare/v2.2.2...v2.2.3) (2025-01-03)
 
 **Note:** Version bump only for package @zthun/lumberjacky-log

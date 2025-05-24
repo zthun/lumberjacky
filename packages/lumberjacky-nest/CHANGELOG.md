@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.0](https://github.com/zthun/lumberjacky/compare/v2.2.3...v2.3.0) (2025-05-24)
+
+
+### Features
+
+* updated nestjs to 11.x ([c7fec07](https://github.com/zthun/lumberjacky/commit/c7fec077d022cb8cf2907f7e4d15b2a3093debfe))
+
+
+
 ## [2.2.3](https://github.com/zthun/lumberjacky/compare/v2.2.2...v2.2.3) (2025-01-03)
 
 **Note:** Version bump only for package @zthun/lumberjacky-nest
