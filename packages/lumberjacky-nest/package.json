@@ -9,12 +9,12 @@
     "url": "https://github.com/zthun/lumberjacky",
     "directory": "packages/lumberjacky-nest"
   },
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.mts",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "type": "module",
   "exports": {
-    "types": "./dist/index.d.ts",
+    "types": "./dist/index.d.mts",
     "import": "./dist/index.js",
     "require": "./dist/index.cjs"
   },
