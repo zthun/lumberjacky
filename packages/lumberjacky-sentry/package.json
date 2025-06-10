@@ -31,14 +31,14 @@
     "access": "public"
   },
   "dependencies": {
-    "@sentry/core": "^9.22.0",
+    "@sentry/core": "^9.27.0",
     "@zthun/lumberjacky-log": "^2.3.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
     "typescript": "~5.8.3",
     "vite": "^6.3.5",
-    "vitest": "^3.1.4",
+    "vitest": "^3.2.3",
     "vitest-mock-extended": "^3.1.0"
   },
   "peerDependencies": {
