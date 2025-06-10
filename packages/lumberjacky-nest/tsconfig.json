@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "declarationDir": "dist/types",
     "paths": {
-      "@zthun/lumberjacky-log": ["../lumberjacky-log/src/index"]
+      "@zthun/lumberjacky-log": ["../lumberjacky-log/src/index.mts"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.mts"]
