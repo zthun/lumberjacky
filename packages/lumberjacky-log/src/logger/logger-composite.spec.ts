@@ -1,8 +1,9 @@
-import { Mocked, beforeEach, describe, expect, it } from "vitest";
+import type { Mocked } from "vitest";
+import { beforeEach, describe, expect, it } from "vitest";
 import { mock } from "vitest-mock-extended";
 import { ZLogEntryBuilder } from "../log-entry/log-entry.mjs";
 import { ZLoggerComposite } from "./logger-composite.mjs";
-import { IZLogger } from "./logger.mjs";
+import type { IZLogger } from "./logger.mjs";
 
 describe("ZLoggerComposite", () => {
   let loggerA: Mocked<IZLogger>;

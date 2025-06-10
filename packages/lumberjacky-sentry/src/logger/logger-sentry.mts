@@ -1,5 +1,6 @@
-import { Client, SeverityLevel } from "@sentry/core";
-import { IZLogEntry, IZLogger, ZLogLevel } from "@zthun/lumberjacky-log";
+import type { Client, SeverityLevel } from "@sentry/core";
+import type { IZLogEntry, IZLogger } from "@zthun/lumberjacky-log";
+import { ZLogLevel } from "@zthun/lumberjacky-log";
 
 /**
  * A logger that logs to sentry (https://sentry.io)

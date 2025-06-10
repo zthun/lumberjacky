@@ -1,4 +1,5 @@
-import { Module, Provider } from "@nestjs/common";
+import type { Provider } from "@nestjs/common";
+import { Module } from "@nestjs/common";
 import { ZLoggerNest } from "./logger-nest.mjs";
 
 /**

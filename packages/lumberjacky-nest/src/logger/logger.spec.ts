@@ -1,7 +1,10 @@
-import { INestApplication, Logger } from "@nestjs/common";
-import { Test, TestingModule } from "@nestjs/testing";
-import { IZLogger, ZLogEntryBuilder, ZLogLevel } from "@zthun/lumberjacky-log";
-import { Mocked, afterEach, beforeEach, describe, expect, it } from "vitest";
+import type { INestApplication, Logger } from "@nestjs/common";
+import type { TestingModule } from "@nestjs/testing";
+import { Test } from "@nestjs/testing";
+import type { IZLogger } from "@zthun/lumberjacky-log";
+import { ZLogEntryBuilder, ZLogLevel } from "@zthun/lumberjacky-log";
+import type { Mocked } from "vitest";
+import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { mock } from "vitest-mock-extended";
 import { ZLoggerModule, ZLoggerToken } from "./logger-module.mjs";
 

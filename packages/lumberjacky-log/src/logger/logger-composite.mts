@@ -1,5 +1,5 @@
-import { IZLogEntry } from "../log-entry/log-entry.mjs";
-import { IZLogger } from "./logger.mjs";
+import type { IZLogEntry } from "../log-entry/log-entry.mjs";
+import type { IZLogger } from "./logger.mjs";
 
 /**
  * Represents a logger that logs to multiple sources.

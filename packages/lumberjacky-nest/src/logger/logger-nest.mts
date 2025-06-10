@@ -1,5 +1,6 @@
 import { Injectable, Logger } from "@nestjs/common";
-import { IZLogEntry, IZLogger, ZLogLevel } from "@zthun/lumberjacky-log";
+import type { IZLogEntry, IZLogger } from "@zthun/lumberjacky-log";
+import { ZLogLevel } from "@zthun/lumberjacky-log";
 
 /**
  * Represents the logger for nestjs.

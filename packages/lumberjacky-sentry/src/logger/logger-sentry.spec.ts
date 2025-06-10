@@ -1,6 +1,7 @@
-import { Client, SeverityLevel } from "@sentry/core";
+import type { Client, SeverityLevel } from "@sentry/core";
 import { ZLogEntryBuilder, ZLogLevel } from "@zthun/lumberjacky-log";
-import { beforeEach, describe, expect, it, Mocked } from "vitest";
+import type { Mocked } from "vitest";
+import { beforeEach, describe, expect, it } from "vitest";
 import { mock } from "vitest-mock-extended";
 import { ZLoggerSentry } from "./logger-sentry.mjs";
 
