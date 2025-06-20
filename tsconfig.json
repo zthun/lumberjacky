@@ -4,8 +4,8 @@
     "baseUrl": "packages",
     "target": "esnext",
     "paths": {
-      "@zthun/lumberjacky-log": ["lumberjacky-log/src/index"],
-      "@zthun/lumberjacky-nest": ["lumberjacky-nest/src/index"]
+      "@zthun/lumberjacky-log": ["lumberjacky-log/src/index.mts"],
+      "@zthun/lumberjacky-nest": ["lumberjacky-nest/src/index.mts"]
     }
   },
   "include": ["**/*.ts", "**/*.mts"]
