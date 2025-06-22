@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.2](https://github.com/zthun/lumberjacky/compare/v3.0.1...v3.0.2) (2025-06-22)
+
+**Note:** Version bump only for package @zthun/lumberjacky-nest
+
+
+
+
+
 ## [3.0.1](https://github.com/zthun/lumberjacky/compare/v3.0.0...v3.0.1) (2025-06-20)
 
 **Note:** Version bump only for package @zthun/lumberjacky-nest
