@@ -31,13 +31,13 @@
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
-    "@nestjs/common": "^11.1.4",
-    "@nestjs/core": "^11.1.4",
-    "@nestjs/platform-express": "^11.1.4",
-    "@nestjs/testing": "^11.1.4",
-    "@zthun/janitor-build-config": "^19.3.1",
-    "typescript": "~5.8.3",
-    "vite": "^7.0.5",
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/core": "^11.1.6",
+    "@nestjs/platform-express": "^11.1.6",
+    "@nestjs/testing": "^11.1.6",
+    "@zthun/janitor-build-config": "^19.3.3",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.4",
     "vitest": "^3.2.4",
     "vitest-mock-extended": "^3.1.0"
   },
