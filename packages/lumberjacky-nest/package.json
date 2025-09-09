@@ -35,9 +35,9 @@
     "@nestjs/core": "^11.1.6",
     "@nestjs/platform-express": "^11.1.6",
     "@nestjs/testing": "^11.1.6",
-    "@zthun/janitor-build-config": "^19.3.3",
+    "@zthun/janitor-build-config": "^19.3.4",
     "typescript": "~5.9.2",
-    "vite": "^7.1.4",
+    "vite": "^7.1.5",
     "vitest": "^3.2.4",
     "vitest-mock-extended": "^3.1.0"
   },
