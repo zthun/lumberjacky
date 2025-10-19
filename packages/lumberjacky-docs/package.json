@@ -22,7 +22,7 @@
     "@zthun/lumberjacky-nest": "^3.0.6",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",
-    "typedoc": "^0.28.13",
+    "typedoc": "^0.28.14",
     "typescript": "~5.9.3"
   },
   "files": [
