@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/zthun/lumberjacky/compare/v3.0.7...v4.0.0) (2025-10-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* output now targets es2020
+
+### Build System
+
+* output now targets es2020 ([2b587d9](https://github.com/zthun/lumberjacky/commit/2b587d97d5eefff1d23dc454d18e495d599362fa))
+
+
+
 ## [3.0.7](https://github.com/zthun/lumberjacky/compare/v3.0.6...v3.0.7) (2025-10-19)
 
 **Note:** Version bump only for package @zthun/lumberjacky-nest
