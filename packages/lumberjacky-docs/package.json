@@ -17,7 +17,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@nestjs/common": "^11.1.6",
+    "@nestjs/common": "^11.1.7",
     "@zthun/lumberjacky-log": "^3.0.7",
     "@zthun/lumberjacky-nest": "^3.0.7",
     "reflect-metadata": "^0.2.2",
