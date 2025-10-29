@@ -31,15 +31,15 @@
     "access": "public"
   },
   "dependencies": {
-    "@sentry/core": "^10.21.0",
+    "@sentry/core": "^10.22.0",
     "@zthun/lumberjacky-log": "^4.0.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@zthun/janitor-build-config": "^19.4.1",
+    "@zthun/janitor-build-config": "^19.4.2",
     "typescript": "~5.9.3",
-    "vite": "^7.1.11",
-    "vitest": "^4.0.1",
+    "vite": "^7.1.12",
+    "vitest": "^4.0.5",
     "vitest-mock-extended": "^3.1.0"
   },
   "peerDependencies": {
