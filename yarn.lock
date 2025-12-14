@@ -3965,7 +3965,7 @@ __metadata:
     vitest: "npm:^4.0.15"
     vitest-mock-extended: "npm:^3.1.0"
   peerDependencies:
-    "@sentry/core": ^9.22.0
+    "@sentry/core": ^10.0.0
   peerDependenciesMeta:
     "@sentry/browser":
       optional: true
