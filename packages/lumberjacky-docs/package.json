@@ -17,12 +17,12 @@
     "access": "public"
   },
   "devDependencies": {
-    "@nestjs/common": "^11.1.8",
+    "@nestjs/common": "^11.1.9",
     "@zthun/lumberjacky-log": "^4.0.1",
     "@zthun/lumberjacky-nest": "^4.0.1",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",
-    "typedoc": "^0.28.14",
+    "typedoc": "^0.28.15",
     "typescript": "~5.9.3"
   },
   "files": [
