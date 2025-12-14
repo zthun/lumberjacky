@@ -1,6 +1,6 @@
 {
   "name": "@zthun/lumberjacky-docs",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "A documentation website for showing lumberjacky's API.",
   "author": "Anthony Bonta",
   "license": "MIT",
@@ -18,8 +18,8 @@
   },
   "devDependencies": {
     "@nestjs/common": "^11.1.9",
-    "@zthun/lumberjacky-log": "^4.0.1",
-    "@zthun/lumberjacky-nest": "^4.0.1",
+    "@zthun/lumberjacky-log": "^4.0.2",
+    "@zthun/lumberjacky-nest": "^4.0.2",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",
     "typedoc": "^0.28.15",
