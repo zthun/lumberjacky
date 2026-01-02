@@ -26,19 +26,19 @@
   },
   "dependencies": {
     "@zthun/lumberjacky-log": "^4.0.2",
-    "lodash-es": "^4.17.21",
+    "lodash-es": "^4.17.22",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
-    "@nestjs/common": "^11.1.9",
-    "@nestjs/core": "^11.1.9",
-    "@nestjs/platform-express": "^11.1.9",
-    "@nestjs/testing": "^11.1.9",
-    "@zthun/janitor-build-config": "^19.5.3",
+    "@nestjs/common": "^11.1.11",
+    "@nestjs/core": "^11.1.11",
+    "@nestjs/platform-express": "^11.1.11",
+    "@nestjs/testing": "^11.1.11",
+    "@zthun/janitor-build-config": "^19.5.4",
     "typescript": "~5.9.3",
-    "vite": "^7.2.7",
-    "vitest": "^4.0.15",
+    "vite": "^7.3.0",
+    "vitest": "^4.0.16",
     "vitest-mock-extended": "^3.1.0"
   },
   "peerDependencies": {
