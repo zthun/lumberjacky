@@ -8,62 +8,60 @@ import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { mock } from "vitest-mock-extended";
 import { ZLoggerModule, ZLoggerToken } from "./logger-module.mjs";
 
-describe("ZLoggerNest", () => {
-  describe("ZVaultModule", () => {
-    let _target: INestApplication;
-    let logger: Mocked<Logger>;
+describe("ZLoggerModule", () => {
+  let _target: INestApplication;
+  let logger: Mocked<Logger>;
 
-    const createTestTarget = async () => {
-      const moduleFixture: TestingModule = await Test.createTestingModule({
-        imports: [ZLoggerModule],
-      })
-        .setLogger(logger)
-        .compile();
+  const createTestTarget = async () => {
+    const moduleFixture: TestingModule = await Test.createTestingModule({
+      imports: [ZLoggerModule],
+    })
+      .setLogger(logger)
+      .compile();
 
-      _target = moduleFixture.createNestApplication();
-      await _target.init();
-      return _target.get<symbol, IZLogger>(ZLoggerToken);
-    };
+    _target = moduleFixture.createNestApplication();
+    await _target.init();
+    return _target.get<symbol, IZLogger>(ZLoggerToken);
+  };
 
-    beforeEach(() => {
-      logger = mock<Logger>();
-    });
+  beforeEach(() => {
+    logger = mock<Logger>();
+  });
 
-    afterEach(async () => {
-      await _target?.close();
-    });
+  afterEach(async () => {
+    await _target?.close();
+  });
 
-    const shouldLogAtLevel = async (
-      expected: (message: any, context?: string | undefined) => void,
-      level: ZLogLevel,
-    ) => {
-      // Arrange.
-      const target = await createTestTarget();
-      const entry = new ZLogEntryBuilder()
-        .context("Lumberjacky Nest")
-        .level(level)
-        .message("A test logging message")
-        .build();
-      // Act.
-      target.log(entry);
-      // Assert.
-      expect(expected).toHaveBeenCalledWith(entry.message, entry.context);
-    };
+  const shouldLogAtLevel = async (
+    expected: (message: any, context?: string | undefined) => void,
+    level: ZLogLevel,
+  ) => {
+    // Arrange.
+    const target = await createTestTarget();
+    const entry = new ZLogEntryBuilder()
+      .context("Lumberjacky Nest")
+      .level(level)
+      .message("A test logging message")
+      .build();
+    // Act.
+    target.log(entry);
+    // Assert.
+    expect(expected).toHaveBeenCalledWith(entry.message, entry.context);
+  };
 
-    it("should log a fatal for catastrophe", async () => {
-      await shouldLogAtLevel(logger.fatal, ZLogLevel.CATASTROPHE);
-    });
+  it("should log a fatal for catastrophe", async () => {
+    await shouldLogAtLevel(logger.fatal, ZLogLevel.CATASTROPHE);
+  });
 
-    it("should log an error for error", async () => {
-      await shouldLogAtLevel(logger.error, ZLogLevel.ERROR);
-    });
+  it("should log an error for error", async () => {
+    await shouldLogAtLevel(logger.error, ZLogLevel.ERROR);
+  });
 
-    it("should log a warn for warning", async () => {
-      await shouldLogAtLevel(logger.warn, ZLogLevel.WARNING);
-    });
+  it("should log a warn for warning", async () => {
+    await shouldLogAtLevel(logger.warn, ZLogLevel.WARNING);
+  });
 
-    it("should log for info", async () => {
-      await shouldLogAtLevel(logger.log, ZLogLevel.INFO);
-    });
+  it("should log for info", async () => {
+    await shouldLogAtLevel(logger.log, ZLogLevel.INFO);
   });
 });
