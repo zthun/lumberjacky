@@ -3928,6 +3928,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@zthun/janitor-ts-config@npm:^19.5.3":
+  version: 19.5.3
+  resolution: "@zthun/janitor-ts-config@npm:19.5.3"
+  peerDependencies:
+    typescript: ^5.0.0
+  checksum: 10/2bee97906e424926e0dfbd70dbb9a137e683203358a4ebffd454111417dfe291cc17dd5d2cb80e5d5f4b0d5c1b3204b54eb4a57eb2cc57d3fc360fc3a4b3da98
+  languageName: node
+  linkType: hard
+
 "@zthun/lumberjacky-docs@workspace:packages/lumberjacky-docs":
   version: 0.0.0-use.local
   resolution: "@zthun/lumberjacky-docs@workspace:packages/lumberjacky-docs"
@@ -3947,6 +3956,7 @@ __metadata:
   resolution: "@zthun/lumberjacky-log@workspace:packages/lumberjacky-log"
   dependencies:
     "@zthun/janitor-build-config": "npm:^19.5.4"
+    "@zthun/janitor-ts-config": "npm:^19.5.3"
     lodash-es: "npm:^4.17.22"
     typescript: "npm:~5.9.3"
     vite: "npm:^7.3.0"
@@ -3964,6 +3974,7 @@ __metadata:
     "@nestjs/platform-express": "npm:^11.1.11"
     "@nestjs/testing": "npm:^11.1.11"
     "@zthun/janitor-build-config": "npm:^19.5.4"
+    "@zthun/janitor-ts-config": "npm:^19.5.3"
     "@zthun/lumberjacky-log": "npm:^4.0.2"
     lodash-es: "npm:^4.17.22"
     reflect-metadata: "npm:^0.2.2"
@@ -3983,6 +3994,7 @@ __metadata:
   dependencies:
     "@sentry/core": "npm:^10.32.1"
     "@zthun/janitor-build-config": "npm:^19.5.4"
+    "@zthun/janitor-ts-config": "npm:^19.5.3"
     "@zthun/lumberjacky-log": "npm:^4.0.2"
     lodash: "npm:^4.17.21"
     typescript: "npm:~5.9.3"
@@ -4017,6 +4029,7 @@ __metadata:
     "@zthun/janitor-lint": "npm:^19.5.4"
     "@zthun/janitor-lint-config": "npm:^19.5.4"
     "@zthun/janitor-options": "npm:^19.5.4"
+    "@zthun/janitor-ts-config": "npm:^19.5.3"
     husky: "npm:^9.1.7"
     jsdom: "npm:^27.4.0"
     lerna: "npm:^9.0.3"

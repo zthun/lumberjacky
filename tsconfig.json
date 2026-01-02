@@ -1,8 +1,7 @@
 {
-  "extends": "./.config/.tsconfig.json",
+  "extends": ["@zthun/janitor-ts-config/base", "@zthun/janitor-ts-config/node"],
   "compilerOptions": {
     "baseUrl": "packages",
-    "target": "esnext",
     "paths": {
       "@zthun/lumberjacky-log": ["lumberjacky-log/src/index.mts"],
       "@zthun/lumberjacky-nest": ["lumberjacky-nest/src/index.mts"]
