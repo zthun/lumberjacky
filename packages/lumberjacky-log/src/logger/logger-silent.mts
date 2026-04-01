@@ -1,4 +1,5 @@
 import { noop } from "lodash-es";
+
 import type { IZLogEntry } from "../log-entry/log-entry.mjs";
 import type { IZLogger } from "./logger.mjs";
 

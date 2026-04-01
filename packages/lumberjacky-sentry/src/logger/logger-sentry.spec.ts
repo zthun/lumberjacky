@@ -3,6 +3,7 @@ import { ZLogEntryBuilder, ZLogLevel } from "@zthun/lumberjacky-log";
 import type { Mocked } from "vitest";
 import { beforeEach, describe, expect, it } from "vitest";
 import { mock } from "vitest-mock-extended";
+
 import { ZLoggerSentry } from "./logger-sentry.mjs";
 
 describe("ZLoggerSentry", () => {

@@ -1,5 +1,6 @@
 import { noop } from "lodash-es";
 import { beforeEach, describe, expect, it, vi } from "vitest";
+
 import { ZLogEntryBuilder } from "../log-entry/log-entry.mjs";
 import { ZLoggerConsole } from "./logger-console.mjs";
 

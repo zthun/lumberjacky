@@ -1,8 +1,9 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
+
 import { ZLogEntryBuilder } from "../log-entry/log-entry.mjs";
+import type { IZLogger } from "./logger.mjs";
 import { ZLoggerContext } from "./logger-context.mjs";
 import { ZLoggerSilent } from "./logger-silent.mjs";
-import type { IZLogger } from "./logger.mjs";
 
 describe("ZLoggerContext", () => {
   let context: string;

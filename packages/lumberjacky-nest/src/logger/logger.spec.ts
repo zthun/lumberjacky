@@ -6,6 +6,7 @@ import { ZLogEntryBuilder, ZLogLevel } from "@zthun/lumberjacky-log";
 import type { Mocked } from "vitest";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { mock } from "vitest-mock-extended";
+
 import { ZLoggerModule, ZLoggerToken } from "./logger-module.mjs";
 
 describe("ZLoggerModule", () => {
@@ -33,7 +34,7 @@ describe("ZLoggerModule", () => {
   });
 
   const shouldLogAtLevel = async (
-    expected: (message: any, context?: string | undefined) => void,
+    expected: (message: any, context?: string) => void,
     level: ZLogLevel,
   ) => {
     // Arrange.

@@ -11,5 +11,5 @@
       "@zthun/lumberjacky-log": ["../lumberjacky-log/src/index.mts"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.mts"]
+  "include": ["**/*.ts", "**/*.mts"]
 }

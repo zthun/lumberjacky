@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+
 import { ZLogEntryBuilder } from "../log-entry/log-entry.mjs";
 import { ZLoggerSilent } from "./logger-silent.mjs";
 
