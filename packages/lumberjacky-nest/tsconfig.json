@@ -5,8 +5,6 @@
     "@zthun/janitor-ts-config/nest-js"
   ],
   "compilerOptions": {
-    "baseUrl": ".",
-    "declarationDir": "dist/types",
     "paths": {
       "@zthun/lumberjacky-log": ["../lumberjacky-log/src/index.mts"]
     }

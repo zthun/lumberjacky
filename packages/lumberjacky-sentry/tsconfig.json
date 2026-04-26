@@ -1,7 +1,6 @@
 {
   "extends": ["@zthun/janitor-ts-config/base", "@zthun/janitor-ts-config/node"],
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
       "@zthun/lumberjacky-log": ["../lumberjacky-log/src/index.mts"]
     }

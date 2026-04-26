@@ -1,10 +1,9 @@
 {
   "extends": ["@zthun/janitor-ts-config/base", "@zthun/janitor-ts-config/node"],
   "compilerOptions": {
-    "baseUrl": "packages",
     "paths": {
-      "@zthun/lumberjacky-log": ["lumberjacky-log/src/index.mts"],
-      "@zthun/lumberjacky-nest": ["lumberjacky-nest/src/index.mts"]
+      "@zthun/lumberjacky-log": ["./packages/lumberjacky-log/src/index.mts"],
+      "@zthun/lumberjacky-nest": ["./packages/lumberjacky-nest/src/index.mts"]
     }
   },
   "include": ["**/*.ts", "**/*.mts"]
