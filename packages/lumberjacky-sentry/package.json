@@ -1,6 +1,6 @@
 {
   "name": "@zthun/lumberjacky-sentry",
-  "version": "4.0.5",
+  "version": "4.0.6",
   "description": "A standard lumberjacky log interface to interact with sentry.",
   "author": "Anthony Bonta",
   "license": "MIT",
@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@sentry/core": "^10.50.0",
-    "@zthun/lumberjacky-log": "^4.0.5"
+    "@zthun/lumberjacky-log": "^4.0.6"
   },
   "devDependencies": {
     "@zthun/janitor-build-config": "^20.0.5",
