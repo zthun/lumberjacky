@@ -1,6 +1,6 @@
 {
   "name": "@zthun/lumberjacky-log",
-  "version": "4.0.6",
+  "version": "4.0.7",
   "description": "A standard log interface between different logging standards.",
   "author": "Anthony Bonta",
   "license": "MIT",
