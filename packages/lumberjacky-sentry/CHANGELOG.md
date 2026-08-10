@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.8](https://github.com/zthun/lumberjacky/compare/v4.0.7...v4.0.8) (2026-08-10)
+
+**Note:** Version bump only for package @zthun/lumberjacky-sentry
+
 ## [4.0.7](https://github.com/zthun/lumberjacky/compare/v4.0.6...v4.0.7) (2026-05-26)
 
 **Note:** Version bump only for package @zthun/lumberjacky-sentry
