@@ -1,6 +1,6 @@
 {
   "name": "@zthun/lumberjacky-nest",
-  "version": "4.0.10",
+  "version": "4.0.11",
   "description": "A lumberjacky log that integrates with the nest framework.",
   "author": "Anthony Bonta",
   "license": "MIT",

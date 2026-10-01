@@ -1,6 +1,6 @@
 {
   "name": "@zthun/lumberjacky-docs",
-  "version": "4.0.10",
+  "version": "4.0.11",
   "description": "A documentation website for showing lumberjacky's API.",
   "author": "Anthony Bonta",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "@zthun/janitor-build-config": "^21.2.4",
     "@zthun/janitor-vite": "^21.2.4",
     "@zthun/lumberjacky-log": "^4.0.10",
-    "@zthun/lumberjacky-nest": "^4.0.10",
+    "@zthun/lumberjacky-nest": "^4.0.11",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2",
     "typedoc": "^0.28.20",
