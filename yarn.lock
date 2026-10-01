@@ -3609,7 +3609,7 @@ __metadata:
     vitest: "npm:^5.0.3"
     vitest-mock-extended: "npm:^5.1.1"
   peerDependencies:
-    "@nestjs/common": ^11.1.1
+    "@nestjs/common": ">11 <13"
   languageName: unknown
   linkType: soft
 
