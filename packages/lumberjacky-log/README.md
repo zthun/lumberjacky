@@ -1,21 +1,51 @@
 # Lumberjacky Log
 
-This is the root log framework that includes the interfaces and cross framework
-loggers that can be used without the need of any framework.
+The core Lumberjacky package provides logging interfaces, a log entry builder,
+and loggers that can be used without an application framework.
 
-## Usage
+## Installation
+
+Install with npm or Yarn:
 
 ```sh
 npm install @zthun/lumberjacky-log
+# or
 yarn add @zthun/lumberjacky-log
 ```
 
-There are 3 loggers that are added in this package that are given to you by
-default.
+## Loggers
 
-| Logger    | Description                                                   |
-| --------- | ------------------------------------------------------------- |
-| Console   | Basic console logger that uses the lumberjacky interface      |
-| Composite | Composite logger that logs to multiple sources                |
-| Silent    | Silent logger used for unit tests                             |
-| Context   | Special logger that includes context information for logging. |
+The package includes four loggers that implement `IZLogger`:
+
+| Logger             | Description                                                                                                         |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| `ZLoggerConsole`   | Writes timestamped messages to the supplied console.                                                                |
+| `ZLoggerComposite` | Forwards each log entry to every supplied child logger.                                                             |
+| `ZLoggerSilent`    | Discards log entries; useful for unit tests.                                                                        |
+| `ZLoggerContext`   | Supplies a default context when the entry's context is missing or empty, then forwards the entry to another logger. |
+
+## Usage
+
+Create an entry with `ZLogEntryBuilder` and pass it to a logger's `log` method:
+
+```ts
+import {
+  ZLogEntryBuilder,
+  ZLoggerConsole,
+  ZLoggerContext,
+} from "@zthun/lumberjacky-log";
+
+const logger = new ZLoggerContext("MyApp", new ZLoggerConsole(console));
+
+const entry = new ZLogEntryBuilder()
+  .info()
+  .message("Application started.")
+  .build();
+
+logger.log(entry);
+```
+
+Log entries contain a message, a level, a creation timestamp, and an optional
+context. The builder defaults to the `ERROR` level, an empty message, and the
+current timestamp as an ISO string. Use `info()`, `warning()`, `error()`, or
+`catastrophe()` to set the level.
