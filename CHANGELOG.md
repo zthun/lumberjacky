@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.12](https://github.com/zthun/lumberjacky/compare/v4.0.11...v4.0.12) (2026-10-14)
+
+### Build System
+
+- remove lumberjacky-docs ([3c7fc9f](https://github.com/zthun/lumberjacky/commit/3c7fc9f26bd475276a4410611840ed2f0cb87c00))
+
+### BREAKING CHANGES
+
+- lumberjacky docs is no longer deployed. Use the readme's instead.
+
 ## [4.0.11](https://github.com/zthun/lumberjacky/compare/v4.0.10...v4.0.11) (2026-10-01)
 
 **Note:** Version bump only for package @zthun/lumberjacky
